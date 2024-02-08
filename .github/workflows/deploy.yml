@@ -64,7 +64,7 @@ jobs:
         run: ls
       - name: Deploy site
         id: deploy
-        uses: ./.github/actions/deploy-s3-javascript
+        uses: ./.github/actions/deploy-s3-docker
         env:
           AWS_ACCESS_KEY_ID: TEST_ID_KEY
           AWS_SECRET_ACCESS_KEY: TEST_SECRET_KEY
