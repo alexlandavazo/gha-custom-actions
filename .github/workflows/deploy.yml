@@ -64,3 +64,5 @@ jobs:
         run: ls
       - name: Deploy site
         run: echo "Deploying..."
+      - name: Run custom action
+        uses: ./.github/actions/deploy-s3-javascript
